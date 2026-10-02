@@ -15,7 +15,7 @@ def get_pokemon_info(name):
         pokemon_data=response.json()
         print(pokemon_data)
     else:
-        print(f"Failed tp retrieve data {response.status_code}")
+        print(f"Failed to retrieve data {response.status_code}")
 
 print("Available Pokemon:",pokemon.keys())
 pokemon_name=input("Enter Pokemon name:").lower()
