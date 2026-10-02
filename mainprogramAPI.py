@@ -1,10 +1,11 @@
 from cfonts import render
+import requests
 output = render("Pokemon API", font="block")
 print(output)
 
-import requests
 
 pokemon ={"pikachu":"https://pokeapi.co/api/v2/","charizard":"https://pokeapi.co/api/v2/","greninja":"https://pokeapi.co/api/v2/"}
+
 
 def get_pokemon_info(name):
     url=pokemon[name]
