@@ -32,6 +32,7 @@ def get_pokemon_info(name):
 print("Available Pokemon:",pokemons.keys())
 pokemon_name=input("Enter Pokemon name: ").lower()
 
+#condition
 if pokemon_name:
     res=get_pokemon_info(pokemon_name)
     print(res)
